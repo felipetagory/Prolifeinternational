@@ -22,7 +22,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
           server-dir: ./
-          protocol: ftps
+          protocol: ftp
           security: loose  # <--- ALTERADO AQUI (Resolve o erro do IP)
           exclude: |
             **/.git*
