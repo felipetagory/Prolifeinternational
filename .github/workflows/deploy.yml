@@ -26,4 +26,5 @@ jobs:
           security: loose  # <--- ALTERADO AQUI (Resolve o erro do IP)
           exclude: |
             **/.git*
-            **/.github*
+            **/.git*/**
+            **/.github*/**
