@@ -19,7 +19,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: var(--font-sans); color: var(--text-light); background: var(--bg-dark); line-height: 1.6; overflow-x: hidden; }
 
-/* Layout de Seções Estilo Elementor */
+/* Layout de Seções */
 section { padding: 80px 20px; position: relative; }
 .container { max-width: 1200px; margin: 0 auto; width: 100%; }
 .row { display: flex; flex-wrap: wrap; margin: 0 -15px; }
@@ -31,11 +31,11 @@ header { background: rgba(5, 5, 5, 0.9); backdrop-filter: blur(10px); padding: 1
 header img { max-height: 50px; display: inline-block; }
 
 /* Hero Banner */
-.hero { background: linear-gradient(to bottom, rgba(5, 5, 5, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%), url('img/hero.webp') no-repeat center center/cover; color: var(--text-light); text-align: center; padding: 120px 20px 100px; }
-.hero h1 { font-family: var(--font-serif); font-size: 3rem; margin-bottom: 20px; font-weight: 700; color: var(--gold-light); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
-.hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 40px; color: var(--text-dim); }
+.hero { background: linear-gradient(to bottom, rgba(5, 5, 5, 0.8) 0%, rgba(10, 10, 10, 0.95) 100%), url('img/hero.webp') no-repeat center center/cover; color: var(--text-light); text-align: center; padding: 120px 20px 100px; }
+.hero h1 { font-family: var(--font-serif); font-size: 3.2rem; margin-bottom: 20px; font-weight: 700; color: var(--gold-light); text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+.hero p { font-size: 1.25rem; max-width: 850px; margin: 0 auto 40px; color: var(--text-dim); }
 
-/* Botões Estilo Elementor */
+/* Botões */
 .btn-cta { display: inline-block; background: var(--gold-gradient); color: var(--bg-darker); padding: 15px 40px; font-weight: 600; text-decoration: none; border-radius: 30px; text-transform: uppercase; font-size: 1rem; letter-spacing: 1px; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4); border: none; cursor: pointer; }
 .btn-cta:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(212, 175, 55, 0.6); background: linear-gradient(135deg, #e5c158 0%, #b38b22 100%); }
 
@@ -52,7 +52,7 @@ header img { max-height: 50px; display: inline-block; }
 .counter-number { font-family: var(--font-serif); font-size: 3rem; font-weight: 700; color: var(--accent-color); }
 .counter-title { font-size: 1rem; color: var(--text-dim); text-transform: uppercase; margin-top: 5px; font-weight: 600; letter-spacing: 1px; }
 
-/* Seção de Segurança Operacional */
+/* Segurança Operacional */
 .seguranca-section { background: var(--bg-darker); color: var(--text-light); border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
 .seguranca-section h2 { font-family: var(--font-serif); color: var(--accent-color); font-size: 2.2rem; margin-bottom: 15px; }
 .seguranca-section h3 { font-size: 1.1rem; color: var(--text-dim); font-weight: 300; line-height: 1.5; }
@@ -64,23 +64,43 @@ header img { max-height: 50px; display: inline-block; }
 .box-fabrica p.titulo { color: var(--accent-color); font-weight: 700; font-size: 1.2rem; letter-spacing: 1px; }
 .box-fabrica p.desc { font-size: 1rem; margin-top: 15px; color: var(--text-dim); }
 
-/* Benefícios */
+/* Benefícios & Clean Beauty */
 .beneficios { background: var(--bg-light); }
 .beneficios h2 { font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold-light); margin-bottom: 40px; text-align: center; }
-.beneficio-item { margin-bottom: 40px; background: rgba(10, 10, 10, 0.5); padding: 30px; border-radius: 10px; border-left: 3px solid var(--accent-color); transition: transform 0.3s ease; }
+.beneficio-item { margin-bottom: 40px; background: rgba(10, 10, 10, 0.5); padding: 30px; border-radius: 10px; border-left: 3px solid var(--accent-color); transition: transform 0.3s ease; height: 100%; }
 .beneficio-item:hover { transform: translateY(-5px); }
 .beneficio-item h4 { font-size: 1.3rem; color: var(--gold-light); margin-bottom: 10px; }
 .beneficio-item p { color: var(--text-dim); }
 
+.clean-beauty-container { margin-top: 50px; text-align: center; background: rgba(20, 20, 20, 0.6); padding: 40px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.2); }
+.clean-beauty-container h3 { font-family: var(--font-serif); font-size: 1.8rem; color: var(--gold-light); margin-bottom: 30px; }
+.seals-grid { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+.seal { background: var(--bg-darker); border: 1px solid rgba(212, 175, 55, 0.4); border-radius: 50%; width: 120px; height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px; transition: transform 0.3s ease; box-shadow: 0 5px 15px rgba(0,0,0,0.5); }
+.seal:hover { transform: scale(1.05); border-color: var(--gold-light); box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3); }
+.seal .icon { font-size: 2rem; margin-bottom: 8px; }
+.seal p { font-size: 0.8rem; font-weight: 600; color: var(--text-light); text-transform: uppercase; line-height: 1.2; text-align: center; }
+
+/* Produtos / Carros-chefes */
+.produtos-section { background: var(--bg-darker); border-top: 1px solid rgba(212, 175, 55, 0.1); }
+.produtos-section h2 { font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold-light); margin-bottom: 10px; text-align: center; }
+.produtos-section .subtitulo { text-align: center; color: var(--text-dim); margin-bottom: 50px; font-size: 1.1rem; }
+.produto-card { background: rgba(15, 15, 15, 0.8); border: 1px solid rgba(255,255,255,0.05); border-radius: 10px; padding: 30px 20px; text-align: center; height: 100%; transition: all 0.3s ease; display: flex; flex-direction: column; }
+.produto-card:hover { border-color: var(--accent-color); transform: translateY(-5px); background: rgba(20, 20, 20, 1); }
+.produto-icon { font-size: 3rem; margin-bottom: 20px; color: var(--accent-color); }
+.produto-card h4 { font-family: var(--font-serif); font-size: 1.4rem; color: var(--text-light); margin-bottom: 15px; }
+.produto-card p { color: var(--text-dim); font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; flex-grow: 1; }
+.produto-card .btn-outline { margin-top: auto; display: inline-block; padding: 8px 20px; border: 1px solid var(--accent-color); color: var(--gold-light); border-radius: 20px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; text-decoration: none; transition: all 0.3s ease; }
+.produto-card .btn-outline:hover { background: var(--accent-color); color: var(--bg-darker); }
+
 /* FAQ */
-.faq { background: var(--bg-darker); }
+.faq { background: var(--bg-light); border-top: 1px solid rgba(212, 175, 55, 0.1); }
 .faq h2 { font-family: var(--font-serif); text-align: center; margin-bottom: 50px; color: var(--gold-light); font-size: 2.5rem; }
 .faq-item { background: rgba(20, 20, 20, 0.6); padding: 25px 30px; margin-bottom: 20px; border-radius: 10px; border-left: 4px solid var(--accent-color); border-right: 1px solid rgba(255,255,255,0.05); border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05); }
 .faq-item h4 { color: var(--text-light); font-size: 1.2rem; margin-bottom: 10px; font-weight: 600; }
 .faq-item p { color: var(--text-dim); }
 
 /* Formulário de Captura Inteligente */
-.form-section { background: var(--bg-light); position: relative; }
+.form-section { background: var(--bg-darker); position: relative; }
 .form-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('img/hero.webp') no-repeat center center/cover; opacity: 0.05; pointer-events: none; }
 .form-wrapper { background: rgba(15, 15, 15, 0.95); padding: 40px; border-radius: 15px; color: var(--text-light); box-shadow: 0 20px 40px rgba(0,0,0,0.5); border: 1px solid rgba(212, 175, 55, 0.2); backdrop-filter: blur(10px); }
 .form-group { margin-bottom: 20px; }
@@ -94,9 +114,12 @@ footer a { color: var(--accent-color); text-decoration: none; margin: 0 10px; tr
 footer a:hover { color: var(--gold-light); }
 
 @media(max-width: 768px) {
-    .col-50, .col-25 { flex: 0 0 100%; max-width: 100%; }
-    .hero h1 { font-size: 2rem; }
+    .col-50, .col-25 { flex: 0 0 100%; max-width: 100%; margin-bottom: 20px; }
+    .hero h1 { font-size: 2.2rem; }
     .price-counter { font-size: 3rem; }
     .box-fabrica { margin-top: 40px; }
     .form-wrapper { margin-top: 40px; padding: 30px 20px; }
+    .seal { width: 100px; height: 100px; padding: 10px; }
+    .seal .icon { font-size: 1.5rem; }
+    .seal p { font-size: 0.7rem; }
 }
