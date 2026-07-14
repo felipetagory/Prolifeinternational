@@ -446,12 +446,12 @@
                 msg += "*Atuo como:* " + role + "\n";
                 msg += "*Sobre o Investimento:* " + invest;
                 
-                const waUrl = "https://wa.me/553198901349?text=" + encodeURIComponent(msg);
+                const waUrl = "https://api.whatsapp.com/send?phone=553198901349&text=" + encodeURIComponent(msg);
                 
-                // Abre o WhatsApp em uma nova aba
-                window.open(waUrl, "_blank");
+                // Salva o link para a página de obrigado
+                localStorage.setItem('wa_link', waUrl);
                 
-                // Redireciona a aba atual para a página de obrigado
+                // Redireciona a aba atual para a página de obrigado (sem bloqueio de popup)
                 window.location.href = "obrigado.html";
             });
         }

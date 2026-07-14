@@ -35,7 +35,7 @@
             <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 20px;">Recebemos suas informações com sucesso.</p>
             <p style="color: var(--text-dim); margin-bottom: 40px;">Você será atendido diretamente pelo nosso WhatsApp para avaliarmos a disponibilidade da sua região.</p>
             
-            <a href="https://wa.me/553198901349" class="btn-cta" style="width: 100%; max-width: 350px;">Continuar para o WhatsApp</a>
+            <a href="https://api.whatsapp.com/send?phone=553198901349" id="wa-btn" class="btn-cta" style="width: 100%; max-width: 350px;">Continuar para o WhatsApp</a>
             <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">Se a aba do WhatsApp não abriu automaticamente, clique no botão acima.</p>
         </div>
     </main>
@@ -52,5 +52,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var waLink = localStorage.getItem('wa_link');
+            if (waLink) {
+                // Atualiza o link do botão
+                document.getElementById('wa-btn').href = waLink;
+                
+                // Redireciona automaticamente após 3 segundos
+                setTimeout(function() {
+                    window.location.href = waLink;
+                }, 3000);
+            }
+        });
+    </script>
 </body>
 </html>
