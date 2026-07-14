@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="fr">
 <head>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -8,16 +8,19 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KDRXJK3D');</script>
     <!-- End Google Tag Manager -->
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obrigado – Prolife International</title>
-    <meta name="description" content="Obrigado pelo seu interesse.">
+    <title>Merci – Prolife International</title>
+    
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=17">
+    
+    <link rel="stylesheet" href="../styles.css?v=18">
 </head>
-<body style="background: var(--bg-dark); min-height: 100vh; display: flex; flex-direction: column;">
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDRXJK3D"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -25,24 +28,24 @@
 
     <header>
         <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
-            <img alt="Prolife International" src="img/Logo%20letras%20pretas.png" class="logo-img">
+            <img alt="Prolife International" src="../img/Logo%20letras%20pretas.png" class="logo-img">
             <div class="lang-selector">
-                <a href="/" class="active" title="Português">🇧🇷 PT</a>
+                <a href="/" title="Português">🇧🇷 PT</a>
                 <a href="/en/" title="English">🇺🇸 EN</a>
-                <a href="/fr/" title="Français">🇫🇷 FR</a>
+                <a href="/fr/" class="active" title="Français">🇫🇷 FR</a>
                 <a href="/ar/" title="العربية">🇦🇪 AR</a>
             </div>
         </div>
     </header>
 
-    <main style="flex: 1; display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px 20px;">
-        <div class="form-wrapper" style="max-width: 600px; margin: 0 auto;">
-            <h1 style="font-family: var(--font-serif); color: var(--gold-primary); font-size: 2.5rem; margin-bottom: 20px;">Quase lá!</h1>
-            <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 20px;">Recebemos suas informações com sucesso.</p>
-            <p style="color: var(--text-dim); margin-bottom: 40px;">Você será atendido diretamente pelo nosso WhatsApp para avaliarmos a disponibilidade da sua região.</p>
+    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 20px;">
+        <div class="form-wrapper" style="max-width: 600px; text-align: center;">
+            <h1 style="color: var(--gold-primary); font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 15px;">Merci !</h1>
+            <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 20px;">Nous avons bien reçu vos informations.</p>
+            <p style="color: var(--text-dim); margin-bottom: 40px;">Vous serez assisté directement via notre WhatsApp afin que nous puissions évaluer la disponibilité dans votre région.</p>
             
-            <a href="https://api.whatsapp.com/send?phone=553198901349" id="wa-btn" class="btn-cta" style="width: 100%; max-width: 350px;">Continuar para o WhatsApp</a>
-            <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">Se a aba do WhatsApp não abriu automaticamente, clique no botão acima.</p>
+            <a href="https://api.whatsapp.com/send?phone=553198901349" id="wa-btn" class="btn-cta" style="width: 100%; max-width: 350px;">Continuer vers WhatsApp</a>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">Si l'onglet WhatsApp ne s'est pas ouvert automatiquement, veuillez cliquer sur le bouton ci-dessus.</p>
         </div>
     </main>
 
@@ -50,11 +53,12 @@
         <div class="container" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px;">
             <div class="footer-content" style="text-align: center;">
                 <p><strong>Fábrica International:</strong><br>
-                Rua Dr. Álvaro Camargos, 2611 - Santa Mônica | Belo Horizonte - MG, Brasil</p>
+                Rua Dr. Álvaro Camargos, 2611 - Santa Mônica | Belo Horizonte - MG, Brazil</p>
                 <div style="margin-top: 10px;">
                     <a href="https://www.instagram.com/prolife_international/" target="_blank">Instagram</a>
-                    <a href="https://www.prolifeinternational.com.br" target="_blank">Site Oficial</a>
+                    <a href="https://prolifebrazil.com/" target="_blank">Site Web de l'Entreprise</a>
                 </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">© 2026 Prolife International. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
@@ -66,7 +70,7 @@
                 // Atualiza o link do botão
                 document.getElementById('wa-btn').href = waLink;
                 
-                // Redireciona automaticamente após 3 segundos
+                // Redireciona automatiquement après 3 secondes
                 setTimeout(function() {
                     window.location.href = waLink;
                 }, 3000);

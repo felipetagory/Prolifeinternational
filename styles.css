@@ -142,3 +142,56 @@ footer strong { color: #ffffff; }
         background-size: 60% 100%, 60% auto; /* Gradiente e imagem limitados a 60%, deixando o fundo E5D6B7 nas laterais */
     }
 }
+
+/* Language Selector */
+.lang-selector {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.lang-selector a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+    opacity: 0.6;
+}
+.lang-selector a:hover, .lang-selector a.active {
+    color: var(--gold-primary);
+    opacity: 1;
+}
+
+/* RTL Support for Arabic */
+[dir="rtl"] {
+    text-align: right;
+}
+[dir="rtl"] .row {
+    flex-direction: row-reverse;
+}
+[dir="rtl"] .form-group label {
+    display: block;
+    text-align: right;
+}
+[dir="rtl"] .radio-group label {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+[dir="rtl"] .suporte-item {
+    text-align: right;
+}
+[dir="rtl"] .beneficio-card {
+    text-align: right;
+}
+[dir="rtl"] .list-seguranca li {
+    padding-left: 0;
+    padding-right: 25px;
+}
+[dir="rtl"] .list-seguranca li::before {
+    left: auto;
+    right: 0;
+}
+[dir="rtl"] .form-group input[type="checkbox"] {
+    margin-right: 0;
+    margin-left: 10px;
+}

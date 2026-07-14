@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KDRXJK3D');</script>
+    <!-- End Google Tag Manager -->
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شكراً لك – برولايف إنترناشيونال</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles.css?v=18">
+    <style>
+        body { font-family: 'Cairo', 'Outfit', sans-serif; }
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDRXJK3D"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+            <img alt="Prolife International" src="../img/Logo%20letras%20pretas.png" class="logo-img">
+            <div class="lang-selector">
+                <a href="/" title="Português">🇧🇷 PT</a>
+                <a href="/en/" title="English">🇺🇸 EN</a>
+                <a href="/fr/" title="Français">🇫🇷 FR</a>
+                <a href="/ar/" class="active" title="العربية">🇦🇪 AR</a>
+            </div>
+        </div>
+    </header>
+
+    <main style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 40px 20px;">
+        <div class="form-wrapper" style="max-width: 600px; text-align: center;">
+            <h1 style="color: var(--gold-primary); font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 15px;">شكراً لك!</h1>
+            <p style="font-size: 1.2rem; color: var(--text-light); margin-bottom: 20px;">لقد تلقينا معلوماتك بنجاح.</p>
+            <p style="color: var(--text-dim); margin-bottom: 40px;">سيتم مساعدتك مباشرة عبر تطبيق واتساب حتى نتمكن من تقييم التوافر في منطقتك.</p>
+            
+            <a href="https://api.whatsapp.com/send?phone=553198901349" id="wa-btn" class="btn-cta" style="width: 100%; max-width: 350px;">المتابعة إلى واتساب</a>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #888;">إذا لم يتم فتح علامة تبويب واتساب تلقائيًا، يرجى النقر على الزر أعلاه.</p>
+        </div>
+    </main>
+
+    <footer style="margin-top: auto;">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px;">
+            <div class="footer-content" style="text-align: center;">
+                <p><strong>Fábrica International:</strong><br>
+                Rua Dr. Álvaro Camargos, 2611 - Santa Mônica | Belo Horizonte - MG, Brazil</p>
+                <div style="margin-top: 10px;">
+                    <a href="https://www.instagram.com/prolife_international/" target="_blank">إنستجرام</a>
+                    <a href="https://prolifebrazil.com/" target="_blank">الموقع الإلكتروني للشركة</a>
+                </div>
+                <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">© 2026 برولايف إنترناشيونال. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var waLink = localStorage.getItem('wa_link');
+            if (waLink) {
+                // Atualiza o link do botão
+                document.getElementById('wa-btn').href = waLink;
+                
+                // Redireciona automatiquement après 3 secondes
+                setTimeout(function() {
+                    window.location.href = waLink;
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>
