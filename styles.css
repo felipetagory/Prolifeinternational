@@ -28,7 +28,14 @@ header { background: rgba(229, 214, 183, 0.9); backdrop-filter: blur(10px); padd
 header img { max-height: 50px; display: inline-block; }
 
 /* Hero Banner - Ajustado o gradiente para dar mais visibilidade à nova foto de produtos */
-.hero { background: linear-gradient(to bottom, rgba(5, 5, 5, 0.5) 0%, rgba(10, 10, 10, 0.85) 100%), url('img/tdprodutos.webp') no-repeat center center/cover; color: #ffffff; text-align: center; padding: 120px 20px 100px; }
+.hero { 
+    background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.5) 0%, rgba(10, 10, 10, 0.85) 100%), url('img/tdprodutos.webp'); 
+    background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-color: #050505;
+    color: #ffffff; text-align: center; padding: 120px 20px 100px; 
+}
 .hero h1 { font-family: var(--font-serif); font-size: 3.2rem; margin-bottom: 20px; font-weight: 700; color: #d4af37; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
 .hero p { font-size: 1.25rem; max-width: 850px; margin: 0 auto 40px; color: #e0e0e0; }
 
@@ -106,4 +113,10 @@ footer strong { color: #ffffff; }
     .suporte-box { padding: 30px 20px; }
     .box-fabrica { margin-top: 40px; }
     .form-wrapper { padding: 30px 20px; }
+}
+
+@media(min-width: 769px) {
+    .hero {
+        background-size: cover, 60% auto; /* Gradiente preenche tudo, imagem fica centralizada e menor (60% da largura) */
+    }
 }
