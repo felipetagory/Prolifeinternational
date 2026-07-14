@@ -42,8 +42,8 @@ header img { max-height: 50px; display: inline-block; }
 /* Botões */
 .btn-cta { 
     display: inline-block; 
-    background: #111111; 
-    color: var(--gold-light); 
+    background: var(--gold-gradient); 
+    color: #111111; 
     padding: 18px 45px; 
     font-weight: 700; 
     text-decoration: none; 
@@ -52,17 +52,16 @@ header img { max-height: 50px; display: inline-block; }
     font-size: 1.1rem; 
     letter-spacing: 1px; 
     transition: all 0.3s ease; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3); 
     border: none; 
     cursor: pointer; 
     text-align: center; 
 }
 .btn-cta:hover { 
     transform: scale(1.02); 
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
-    background: var(--gold-gradient); 
-    color: #ffffff; 
-    border-color: transparent; 
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5); 
+    background: #ffffff; 
+    color: #111111; 
 }
 
 /* Bloco de Investimento Inicial */
