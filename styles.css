@@ -33,7 +33,7 @@ header img { max-height: 50px; display: inline-block; }
     background-position: center center, center center;
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
-    background-color: #050505;
+    background-color: #E5D6B7;
     color: #ffffff; text-align: center; padding: 120px 20px 100px; 
 }
 .hero h1 { font-family: var(--font-serif); font-size: 3.2rem; margin-bottom: 20px; font-weight: 700; color: #d4af37; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
@@ -117,6 +117,6 @@ footer strong { color: #ffffff; }
 
 @media(min-width: 769px) {
     .hero {
-        background-size: cover, 60% auto; /* Gradiente preenche tudo, imagem fica centralizada e menor (60% da largura) */
+        background-size: 60% 100%, 60% auto; /* Gradiente e imagem limitados a 60%, deixando o fundo E5D6B7 nas laterais */
     }
 }
