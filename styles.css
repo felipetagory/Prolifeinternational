@@ -177,7 +177,8 @@ footer strong { color: #ffffff; }
         justify-content: flex-end;
     }
     .hero-image img {
-        max-width: 600px;
+        max-width: 450px; /* Reduced image size for better proportion */
+        width: 100%;
     }
 }
 
