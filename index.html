@@ -307,8 +307,25 @@
                 // Salva o link para a página de obrigado
                 localStorage.setItem('wa_link', waUrl);
                 
-                // Redireciona a aba atual para a página de obrigado (sem bloqueio de popup)
-                window.location.href = "obrigado.html";
+                // Envia os dados para a Planilha do Google Sheets
+                const scriptURL = "https://script.google.com/macros/s/AKfycbwHma_uNEJ9ZJBJ2dfF7UtSPkAgPgcz4TCxY8XT2UGP70fh-w7qHgR8skQDnD1xt_MT/exec";
+                const payload = {
+                    name: nome,
+                    email: email,
+                    whatsapp: zap,
+                    city: city,
+                    voce_e: role,
+                    invest_ready: invest
+                };
+
+                fetch(scriptURL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).finally(function () {
+                    window.location.href = "obrigado.html";
+                });
             });
         }
     });
